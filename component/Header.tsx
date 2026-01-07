@@ -217,7 +217,7 @@ export default function Header() {
 					<div className="w-[320px] max-w-full h-full bg-white shadow-xl flex flex-col p-5 relative animate-slide-in-right">
 						{/* Close Button */}
 						<button
-							className="absolute top-2 right-4 text-gray-500 hover:text-black" // moved up from top-4 to top-2
+							className="absolute top-2 right-4 text-gray-500 hover:text-black"
 							onClick={() => setMenuOpen(false)}
 							aria-label="Close menu"
 						>
@@ -228,7 +228,7 @@ export default function Header() {
 						</button>
 
 						{/* Menu Content */}
-						<div className="flex flex-col gap-2 mt-2">
+						<div className="flex flex-col gap-2 mt-6">
 							{/* Buying A Franchise */}
 							<div>
 								<button
