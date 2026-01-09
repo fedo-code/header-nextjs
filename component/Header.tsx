@@ -2,35 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-const navLinks = [
-	{ label: "Buy A Franchise", href: "#", hasDropdown: true },
-	{ label: "News & Features", href: "#", hasDropdown: true },
-	{ label: "Franchise Resources", href: "#", hasDropdown: true },
-	{ label: "For Franchisors", href: "#", hasDropdown: true },
-	{ label: "1851 Services", href: "#", hasDropdown: true },
-];
-
-const buyingFranchiseLinks = [
-	{
-		label: "Find a Franchise Opportunity",
-		icon: "/logos/lucide_inspect.png",
-		href: "#",
-		box: true,
-	},
-	{
-		label: "Franchise Deep Dives",
-		icon: "/logos/material-symbols_wifi-find-outline.png",
-		href: "#",
-		box: true,
-	},
-	{
-		label: "Hottest Franchise Rankings",
-		icon: "/logos/heroicons_fire.png",
-		href: "#",
-		box: true,
-	},
-];
+import { navLinks, buyingFranchiseLinks } from "../data/headerData";
 
 export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
